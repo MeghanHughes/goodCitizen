@@ -6,12 +6,12 @@ test('calling update() notifies anylisteners with an updated model', (t) => {
   t.plan(1)
   const model = {appName: 'Hello' }
   const store = Store(model)
-  
+
   store.subscribe((updatedModel) => {
-    // assert 
-    t.deepEqual(model, updatedModel) 
+    // assert
+    t.deepEqual(model, updatedModel)
   })
 
   // action
   store.update('appName', 'snowball')
-})
+}
