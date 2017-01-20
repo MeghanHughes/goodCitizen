@@ -1,6 +1,6 @@
 const React = require('react')
 const _ = require('lodash')
-const Map = require('./map')
+// const Map = require('./map')
 //components
 
 module.exports = function App (props) {
